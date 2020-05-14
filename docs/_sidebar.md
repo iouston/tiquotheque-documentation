@@ -17,7 +17,8 @@
   - [Tiers](/tiers)
   - [Client, contact, etc...](/clients)
   - [Projets](/projets)     
-- **Utilisation avancée**
+- **Documentation technique**
+  - [Infos techniques](/infos_techniques)
 - **Questions Fréquentes**
 - **Assistance**
 	- [Contacter l'assistance](/contact_assistance)
