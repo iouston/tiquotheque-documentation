@@ -2,21 +2,31 @@
 
 ## Informations générales
 
-* Dans deoriom, **seuls les champs en gras sont obligatoires** à remplir
+* Dans la tiquothèque, **seuls les champs en gras sont obligatoires** à remplir
 * Les liens textes renvoient vers l'élément concerné
 * Un clic sur une icone (par exemple, sur une icone pdf), affiche le fichier concerné.
 * Dolibarr est accessible à partir de n'importe quelle connexion internet et smartphone
 * Votre mot de passe est personnel, ne communiquez pas votre accès à d'autres personnes.
 * Il est possible si besoin de vous donner plusieurs accès à dolibarr (pour vos collaborateurs par exemple).
 
-## Procédure générale à l'ajout d'un dossier, d'une affaire
-* Lorsqu’une nouvelle demande de prix arrive, la procédure suivante doit s’appliquer :
-* Rechercher via le module de recherche en haut à gauche si le client existe dans la base
-* Si le client n’existe pas : Créer une fiche client et les contacts associés
-* Si le client existe, vérifier la fiche (adresse, code postal, tel, mail, etc…) et vérifier que le contact de l’affaire existe, sinon, le créer
-* Créer un projet. Le projet est la pochette virtuelle dans laquelle nous allons glisser tous les éléments relatifs à cette affaire. Chaque projet correspond à une affaire à traiter avec ce client.
-* Créer un devis (ou plus selon le cas)
-* Créer une commande client (ou plus si besoin)
-* Fabriquer et créer une commande fournisseur
-* Créer une facture (ou plus si besoin)
-* Encaisser le règlement
+## Définitions d'un signalement
+* Le signalement, pour signalement de piqûre de tique, est un type de contenu contenant les informations liées à une piqûre de tique
+* Les signalements peuvent être ajoutés à la tiquothèque de plusieurs façons :
+		→ Via l'application android(https://www.citique.fr/android)
+		→ Via l'application ios(https://www.citique.fr/ios)
+		→ Via le formulaire web(https://www.citique.fr/web)
+		→ Via le formulaire papier(https://www.citique.fr/papier)
+* Un signalement peut correspondre à plusieurs échantillons
+
+## Définition d'un envoi
+* L'envoi est un type de contenu qui recence les enveloppes reçues au laboratoire et contenant, un ou plusieurs échantillons.
+* Un envoi peut être lié à plusieurs échantillons, et à plusieurs signalements
+
+## Définition d'un échantillon
+* Un échantillon est la tique responsable d'une piqûre signalée.
+* Il est possible pour plusieurs échantillons d'être lié au même signalement
+
+## Définition d'un résultat
+* Le résultat est un résultat d'analyse lié à un échantillon
+* Un échantillon devrait donc en principe être lié à plusieurs résultats
+* Les résultats sont pour le moment importer via excel, mais il est possible d'importer des résultats via une API. Un tableau excel permettant de gérer facilement l'API est en prévision de réalisation
