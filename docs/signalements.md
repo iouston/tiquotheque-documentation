@@ -9,8 +9,6 @@
 * Connectez-vous au serveur et de là à phpmyadmin
 * Allez dans la table llx_signalement et recherchez dans le champ ref la valeur de signalement donnné par l'utilisateur
 * Copiez la valeur du champ rowid correspondante 
-* Allez dans la table llx_formulaireval
-* Recherchez dans le champ fk_signalement la valeur id du signalement précédemment copiée
 * Au niveau du champ fk_user, indiquez l'id du compte utilisateur que vous avez copié au début
 * Valider. Le compte utilisateur et le signalement sont désormais liés.
 
