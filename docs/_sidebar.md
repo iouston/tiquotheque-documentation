@@ -19,6 +19,8 @@
   - [Projets](/projets)     
 - **Documentation technique**
   - [Infos techniques](/infos_techniques)
+  - [Les signalements](/signalements)
+  - [API REST](/api_rest)
 - **Questions Fréquentes**
 - **Assistance**
 	- [Contacter l'assistance](/contact_assistance)
