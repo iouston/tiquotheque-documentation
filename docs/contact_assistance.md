@@ -9,7 +9,6 @@ L'assistance est disponible du lundi au vendredi par mail
 ## Comment obtenir une assistance efficace ?
 Pour obtenir une assistance efficace il est nécessaire de préciser dans votre mail :
 * Votre nom d'utilisateur
-* Votre diocèse
 * De décrire précisément ce que vous voulez faire
-* D'indiquer l'adresse de la page sur laquelle vous constatez un problème
+* D'indiquer l'adresse de la page sur laquelle vous constatez un problème en copinat collant l'adresse dans votre message
 * D'indiquer la marche à suivre pour reproduire l'erreur que vous constatez
