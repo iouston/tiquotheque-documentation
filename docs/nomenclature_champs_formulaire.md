@@ -40,6 +40,20 @@ Cette nomenclature vous donne les éléments techniques utilisés par le logicie
 0,Je ne connais pas le lieu de la piqûre
 1,Je connais le lieu de la piqûre
 
+## Raison de la présence / raison_presence
+-Type de champ : Liste issue d'un dictionnaire → llx_c_raison
+-Code du champ : raison_presence
+-Valeurs utilisées :
+* 1,pro,Activité professionnelle
+* 2,resid,Lieu de résidence
+* 3,randprompiq,Randonnée, promenade, pique-nique
+* 4,scol,Milieu scolaire
+* 5,loisir,Loisir
+* 6,chassepeche,Chasse, pêche
+* 7,sport,Sport
+* 8,scouti,Scoutisme
+* 9,clsh,Centre de loisirs / colo / camp
+* 10,autre,Autre
 
 ## Champ - zone du corps piqué / zone_corps_pique
 -Type de champ : Liste déroulante
