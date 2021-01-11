@@ -56,7 +56,7 @@ Cette colonne permet de garder le numéro id du signalement tel qu'il était dan
 - Type de champ : integer, le nombre de tiques fixées
 - Code du champ : nb_tiques_implantee
 
-## Champ - précision sur la date de la piqure / precision_date_piq
+## Précision sur la date de la piqure / precision_date_piq
 - Type de champ : Liste déroulante
 - Code du champ : precision_date_piq
 - Valeurs utilisées :
@@ -71,9 +71,9 @@ Cette colonne permet de garder le numéro id du signalement tel qu'il était dan
 ## La piqûre a eu lieue en France ?
 - Type de champ : boolean
 - Code du champ : piqure_en_france
-- Valeurs utilisées :
-* 0,Non
-* 1,Oui
+- Valeurs utilisées : /!\ Attention, Booléen monté à l'envers ! En même temps que 3 données au 11/01/2021. Ce champ sert-il encore ? Vu qu'on a le pays par ailleurs ? Est-ce juste pour les données ephythia ?
+* 0,Oui
+* 1,Non
 
 ## Caractérisation de l'environnement / caracterisation_env_piqure
 - Type de champ : Liste issue d'un dictionnaire → llx_c_caracterisation
@@ -91,8 +91,8 @@ Cette colonne permet de garder le numéro id du signalement tel qu'il était dan
 
 ## Raison de la présence / raison_presence
 - Type de champ : Liste issue d'un dictionnaire → llx_c_raison
--Code du champ : raison_presence
--Valeurs utilisées :
+- Code du champ : raison_presence
+- Valeurs utilisées :
 * 1,pro,Activité professionnelle
 * 2,resid,Lieu de résidence
 * 3,randprompiq,Randonnée, promenade, pique-nique
@@ -104,7 +104,74 @@ Cette colonne permet de garder le numéro id du signalement tel qu'il était dan
 * 9,clsh,Centre de loisirs / colo / camp
 * 10,autre,Autre
 
-## Champ - précision coordo géographique / precis_coordo_gps
+## Autre info
+- Type de champ : Textarea
+- Code du champ : autre_info
+
+## Lieu de la piqûre
+- Type de champ : varchar, coordonées GPS en WGS84. Latitude et Longitude sont séparées spar une virgule
+- Exemple : 48.600297119772726,7.25105132907629
+- Code du champ :lieu_piqure 
+
+## Sociologie
+- Type de champ : Champ non utilisé à priori...
+- Code du champ : 
+
+## Sociologie détail
+- Type de champ : Textarea, informations et témoignages socio fournis lors du signalement
+- Code du champ : 
+
+## Origine
+- Type de champ : Varchar, L'origine et le type de signalement
+- Code du champ : origine
+- Exemple : Web 1.0.4 | Android 10 | iOS 14.3.0 | fp
+
+## Origine numéro de lot
+- Type de champ : Varchar, permet de conserver le numéro de lot inscrit en haut à droite sur certains formulaires papier
+- Code du champ : origine_num_lot
+
+## Evenement signalement
+- Type de champ : Select, issu d'un dictionnaire → llx_c_occasion
+- Code du champ : evenement_signalement
+- Valeurs utilisées :
+* 01,Ofrance2019
+* 02,Caldenatienne 2019
+* 03,Scouts 
+
+## Propriétaire de la data
+- Type de champ : Select, issu d'un dictionnaire → llx_c_propriétaire
+- Code du champ : proprietaire_data
+- Valeurs utilisées :
+* citique,CiTIQUE
+
+## Partenariat
+- Type de champ : Select, issu d'un dictionnaire → llx_c_partenariat
+- Code du champ : partenariat
+- Valeurs utilisées :
+* onf,ONF
+* sgdf,Scouts et Guides de France
+
+## Primeur de la data
+- Type de champ : Date, date après laquelle le propriétaire n'a plus de primeur sur la donnée. 
+Par défaut, +365 jours par rapport à la date de saisie. Voir le champ tms
+- Code du champ : primeur_data
+
+## email_signalement17
+- Type de champ : Champ inutilisé à priori
+- Code du champ : 
+
+## id_ephythia17
+- Type de champ : Champ inutilisé à priori
+- Code du champ : 
+
+## Précision zone géographique / precis_zone_geo
+- Type de champ : Liste déroulante
+- Code du champ : precis_zone_geo
+- Valeurs utilisées :
+* 0,Je ne connais pas le lieu de la piqûre
+* 1,Je connais le lieu de la piqûre
+
+## Précision coordo géographique / precis_coordo_gps
 - Type de champ : Liste déroulante
 - Code du champ : precis_coordo_gps
 - Valeurs utilisées :
@@ -112,19 +179,39 @@ Cette colonne permet de garder le numéro id du signalement tel qu'il était dan
 * 1,1a5,entre 1 et 5 km
 * 2,plus5,plus de 5km 
 
-## Champ - précision zone géographique / precis_zone_geo
-- Type de champ : Liste déroulante
-- Code du champ : precis_zone_geo
-- Valeurs utilisées :
-* 0,Je ne connais pas le lieu de la piqûre
-* 1,Je connais le lieu de la piqûre
+## Précision lieu si autre
+- Type de champ : Textarea, précision détaillée si le lieu choisi est 'autre'
+- Code du champ : precis_lieu_si_autre
 
+## Précision si activité profesionnelle
+- Type de champ : Varchar, permet de préciser une raison si on a choisi 'activité professionnelle'
+- Code du champ : precis_si_act_pro
 
+## Photos
+- Type de champ : varchar, nom du fichier séparé par une virgule.
+Le fichier est renomé avec la référence du signalement comme par exemple : 026586_Photo_1.png,026586_Photo_2.png,026586_Photo_3.png
+- Code du champ : lieu_piqure_pays
 
-## Champ - zone du corps piqué / zone_corps_pique
+## Lieu piqure ville
+- Type de champ : varchar, le nom de la ville en toute lettre
+- Code du champ : lieu_piqure_ville
+
+## Lieu piqure département
+- Type de champ : varchar, le nom du département en toute lettre
+- Code du champ : lieu_piqure_departement
+
+## Lieu piqure région
+- Type de champ : varchar, le nom de la région en toute lettre
+- Code du champ : lieu_piqure_region
+
+## Lieu piqûre pays
+- Type de champ : varchar, le nom du pays en toute lettre
+- Code du champ : lieu_piqure_pays
+
+## Zone du corps piqué / zone_corps_pique
 - Type de champ : Liste déroulante
 - Code du champ : zone_corps_pique
--Valeurs utilisées :
+- Valeurs utilisées :
 * 1,bras,Bras
 * 2,dos,Dos
 * 3,fesses, Fesses
@@ -132,6 +219,61 @@ Cette colonne permet de garder le numéro id du signalement tel qu'il était dan
 * 5,main,Main
 * 6,pied,Pied
 * 7,tete,Tête
-* 8,torse,Torse et ventre
+* 8,torse,Torse et ventre 
 
+## Type d'animal
+- Type de champ : champ qui ne semble pas utilisé, on utilise plutôt le champ issu du profil de l'animal
+- Code du champ : 
 
+## Sexe animal
+- Type de champ : Select issu d'un dictionnaire → llx_c_sex_animal
+- Code du champ : sexe_animal
+- Valeurs utilisées :
+* 1,mâle
+* 2,femelle
+
+## Nom piqué
+- Type de champ : varchar, nom du profil sélectionné
+- Code du champ : nom_pique
+
+## Zone corps animal
+- Type de champ : Select
+- Code du champ : zone_corps_animal
+- Valeurs utilisées :
+* 1,croupe, Croupe, queue
+* 2,dos,Dos
+* 3,pattesarr,Pattes arrières
+* 4,pattesavt,Pattes avants
+* 5,tete,Tête / cou
+* 6,ventre,Ventre
+
+## Est traité ?
+- Type de champ : Select, l'animal est-il traité contre les tiques ?
+- Code du champ : est_traite
+- Valeurs utilisées : 
+* 0,non,Non
+* 1,oui,Oui
+
+## Quel traitement ?
+- Type de champ : textarea, permet de préciser le traitement reçu dans un texte libre
+- Code du champ : quel_traitement
+
+## Avez tique ?
+- Type de champ : Select, permet à l'utilisateur d'indiquer si il dispose de l'échantillon ou non
+- Code du champ : avez_tique
+- Valeurs utilisées : 
+* 0,non,Non elle a été détruite ou perdue
+* 1,oui,Oui Je vais pouvoir vous l'envoyer
+
+## Num bea
+- Type de champ : varchar, un numéro d'identification noté sur les échantillons dans les congélateurs. 
+Un numéro BEA correspond à un lot d'échantillon (tous ceux d'une enveloppe en fait). Le numéro BEA porte ce nom en référence à Béatrice (Béa) pallin qui a été la première tiquothécaire du projet
+- Code du champ : num_bea
+
+## Type formulaire papier
+- Type de champ : Select, permet de préciser le type de formulaire papier
+- Code du champ : primeur_data
+- Valeurs utilisées :
+* 0,papierlibre,Papier libre
+* 1,formulairekit,Formulaire avec Kit
+* 2,formulairesanskit,Formulaire sans Kit
