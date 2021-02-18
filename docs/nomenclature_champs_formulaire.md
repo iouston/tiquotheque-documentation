@@ -124,6 +124,11 @@ Cette colonne permet de garder le numéro id du signalement tel qu'il était dan
 ## Origine
 - Type de champ : Varchar, L'origine et le type de signalement
 - Code du champ : origine
+* Android... : Systeme android
+* iOS... : Système ios
+* Web : Envoyé par le formulaire web en ligne
+* fp : formulaire papier
+* p : papier
 - Exemple : Web 1.0.4 | Android 10 | iOS 14.3.0 | fp
 
 ## Origine numéro de lot
