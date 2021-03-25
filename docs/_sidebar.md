@@ -19,7 +19,8 @@
   - [Projets](/projets)     
 - **Documentation technique**
   - [Infos techniques](/infos_techniques)
-  - [Les signalements](/signalements)
+  - [Signalements](/signalements)
+  - [Nomenclature](/nomenclature_champs_formulaire)
   - [API REST](/api_rest)
 - **Questions Fréquentes**
 - **Assistance**
