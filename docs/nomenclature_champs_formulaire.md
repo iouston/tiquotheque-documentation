@@ -109,7 +109,7 @@ Cette colonne permet de garder le numéro id du signalement tel qu'il était dan
 - Code du champ : autre_info
 
 ## Lieu de la piqûre
-- Type de champ : varchar, coordonées GPS en WGS84. Latitude et Longitude sont séparées spar une virgule
+- Type de champ : varchar, coordonées GPS en WGS84. Latitude et Longitude sont séparées par une virgule
 - Exemple : 48.600297119772726,7.25105132907629
 - Code du champ :lieu_piqure 
 
@@ -282,3 +282,88 @@ Un numéro BEA correspond à un lot d'échantillon (tous ceux d'une enveloppe en
 * 0,papierlibre,Papier libre
 * 1,formulairekit,Formulaire avec Kit
 * 2,formulairesanskit,Formulaire sans Kit
+
+# Champs relatifs au formulaire spécifique CNFP
+
+> [!WARNING]
+> Tous les champs relatifs au cnpf doivent être préfixés avec "cnpf_"
+
+
+## Catégorie professionnelle
+- Type de champ : Select, permet de préciser la catégorie professionnelle
+- Code du champ : cnpf_cat_pro
+- Valeurs utilisées :
+* 1,perso_admin,Personnel administratif
+* 2,tech,Technicien
+* 3,inge,Ingénieur
+* 4,perso_direction,Personnel direction
+
+## Structure de rattachement
+- Type de champ : Select, permet de préciser la structure de rattachement
+- Code du champ : cnpf_struc_rattach
+- Valeurs utilisées :
+* 1,idf,Ile de France
+* 2,deleg_reg,Délégation régionale
+* 3,dir_gale,Direction générale
+
+## Raison de la présence sur le lieu de la piqure
+- Type de champ : Select, permet de préciser la raison de la présence sur le lieu de la piqûre
+- Code du champ : cnpf_struc_rattach
+- Valeurs utilisées :
+* 1,visi_instru_cons,Visite instruction/conseil
+* 2,mesur_disp,Mesures de dispositifs
+* 3,formation,Formations
+
+## Environnement de la piqûre
+- Type de champ : cases à cocher, permet de préciser le ou les environnements de la piqure
+- Code du champ : cnpf_carac_env
+- Valeurs utilisées :
+* 1,foret,Forêt
+* 2,zoneurbaine,Zone urbaine
+* 3,parcpublic,Jardin public ou parc public
+* 4,pre,Pré
+* 5,zonagricult,Zone agricole cultivée
+* 6,zone_veg_arb,Zone à végétation arbustive (pelouses naturelles, landes, broussailles...)
+* 7,esp_nat_ouv_peu_veg,Espace naturel ouvert peu végétalisé (dunes/zone incendiée/roches nues...)
+* 8,zone_humi,Zone humide
+* 9,jnsp,Je ne sais pas
+
+## Raison de la présence sur le lieu de la piqure
+- Type de champ : Select, permet de préciser la raison de la présence sur le lieu de la piqûre
+- Code du champ : cnpf_struc_rattach
+- Valeurs utilisées :
+* 1,visi_instru_cons,Visite instruction/conseil
+* 2,mesur_disp,Mesures de dispositifs
+* 3,formation,Formations
+
+## Composition du peuplement forestier parcouru
+- Type de champ : liste de sélection, permet de préciser la composition du peuplement forestier parcouru
+- Code du champ : cnpf_compo_peup_foret
+- Valeurs utilisées :
+* 1,peup_feuillus,Peuplement pur de feuillus
+* 2,peup_conifere,Peuplement pur de conifères
+* 3,peup_mixte,Peuplement de feuillus et de conifères
+* 4,jnsp,Je ne sais pas
+
+## Structure du peuplement forestier
+- Type de champ : liste de sélection, permet de préciser la structure du peuplement forestier parcouru
+- Code du champ : cnpf_structure_compo_peup_foret
+- Valeurs utilisées :
+* 1,futaie_regu,Futaie régulière
+* 2,futaie_irreg,Futaie irrégulière
+* 3,melange_fut_taill,Mélange taillis et futaie
+* 4,taillis,Taillis
+* 5,autre,Autre
+
+## Age du peuplement forestier
+- Type de champ : liste de sélection, permet de préciser la structure du peuplement forestier parcouru
+- Code du champ : cnpf_age_peup
+- Valeurs utilisées :
+* 1,semi,Semis
+* 2,jeune,Jeune peuplement
+* 3,adulte,Peuplement adulte
+* 4,mur,Peuplement mûr
+* 5,toutage,Tout âge
+
+
+
