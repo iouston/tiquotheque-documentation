@@ -219,7 +219,7 @@ Le fichier est renomé avec la référence du signalement comme par exemple : 02
 - Valeurs utilisées :
 * 1,bras,Bras
 * 2,dos,Dos
-* 3,fesses, Fesses
+* 3,fesses, Maillot
 * 4,jambe,Jambe
 * 5,main,Main
 * 6,pied,Pied
