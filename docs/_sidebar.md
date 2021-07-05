@@ -13,10 +13,7 @@
 - **Démarrer**
   - [Considérations générales](/considerations_generales)
   - [Se connecter](/se_connecter)
-- **Utilisation générale**
-  - [Tiers](/tiers)
-  - [Client, contact, etc...](/clients)
-  - [Projets](/projets)     
+  - [Saisir formulaire papier](/saisie_formulaire_papier)
 - **Documentation technique**
   - [Infos techniques](/infos_techniques)
   - [Signalements](/signalements)
