@@ -365,5 +365,59 @@ Un numéro BEA correspond à un lot d'échantillon (tous ceux d'une enveloppe en
 * 4,mur,Peuplement mûr
 * 5,toutage,Tout âge
 
+## Combien de temps passé sur le lieu de la piqûre
+- Type de champ : liste de sélection, permet de préciser le temps passé sur les lieux de la piqûre
+- Code du champ : cnpf_tps_lieu_piq
+- Valeurs utilisées :
+* 1,1a2h,1 à 2 heures
+* 2,demij,1 demi-journée
+* 3,journee,1 journée
+* 4,jnsp,Je ne sais pas
 
+## Quels moyens de protection avez-vous utilisé ?
+- Type de champ : cas à cocher, permet de préciser les moyens de protection utilisés
+- Code du champ : cnpf_moyens_protect
+- Valeurs utilisées :
+* 0,aucun,Aucune protection
+* 1,vet_couv_ht_corps,Vêtements couvrants le haut du corps
+* 2,vet_couv_bas_corps,Vêtements couvrants le bas du corps
+* 3,guetres,Guêtres
+* 4,repulsif_vet,Répulsif sur les vêtements
+* 5,repulsif_peau,Répulsif sur la peau
+* 6,autre,Autre
+
+## Précisez
+- Type de champ : texte libre, permet de préciser le répulsif utilisé et/ou le champ autre
+- Code du champ : cnpf_precision_repulsif_et_autre
+
+## Par quel moyen la tique a-t-elle été retirée ?
+- Type de champ : liste de sélection, permet de préciser par quel moyen la tique a été retirée
+- Code du champ : cnpf_facon_retire_tiq
+- Valeurs utilisées :
+* 1,tiretiq,Tire-tique
+* 2,pinceepiler,Pince à épiler
+* 3,autre,Autre
+
+## Précisez autre
+- Type de champ : texte libre, permet de préciser le répulsif utilisé et/ou le champ autre
+- Code du champ : cnpf_precision_retiree_autre
+
+## Avez-vous désinfecté
+- Type de champ : case d'option, permet de préciser si la zone de la piqûre a été désinfectée après extraction
+- Code du champ : cnpf_desinfect
+- Valeurs utilisées :
+* 0,non,Non
+* 1,oui,Oui
+
+## Avec quel délai avez-vous retiré la tique après l'avoir détectée
+- Type de champ : case d'option, permet de préciser au bout de combien de temps la tique a été retirée après avoir été détectée
+- Code du champ : cnpf_delai_retire_tique
+- Valeurs utilisées :
+1,toutsuite,Tout de suite
+2,moins3h,Moins de 3h
+3,3a15h,Entre 3 et 6h
+4,6a9h,Entre 6 et 9h
+5,9a12,Entre 9 et 12h
+6,12a24,Entre 12 et 24h
+7,plusde24h,Plus de 24h
 
