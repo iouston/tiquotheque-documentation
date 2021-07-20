@@ -89,6 +89,12 @@ Cette colonne permet de garder le numéro id du signalement tel qu'il était dan
 * 8,jardinpriv,Jardin privé
 * 9,parcpublic,Parc public / municipal
 
+## Caractérisation de l'environnement / carac_env_piq_old
+- Type de champ : Liste déroulante
+- Code du champ : carac_env_piq_old
+- Valeurs utilisées :
+* 0,jardinpriv_parcpub,Jardin privé ou Parc public
+
 ## Raison de la présence / raison_presence
 - Type de champ : Liste issue d'un dictionnaire → llx_c_raison
 - Code du champ : raison_presence
