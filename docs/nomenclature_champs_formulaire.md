@@ -427,3 +427,13 @@ Un numéro BEA correspond à un lot d'échantillon (tous ceux d'une enveloppe en
 6,12a24,Entre 12 et 24h
 7,plusde24h,Plus de 24h
 
+## Heure de piqûre
+- Type de champ : à cocher, permet de préciser un créneau horaire pour la piqûre
+- Code du champ : cnpf_heure_piqure
+- Valeurs utilisées :
+0,8a10,Entre 8h et 10h
+1,10a12,Entre 10h et 12h
+2,12a14,Entre 12h et 14h
+3,14a16,Entre 14 et 16h
+4,16a18,Entre 16h et 18h
+
