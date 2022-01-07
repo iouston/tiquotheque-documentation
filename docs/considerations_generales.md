@@ -29,4 +29,21 @@
 ## Définition d'un résultat
 * Le résultat est un résultat d'analyse lié à un échantillon
 * Un échantillon devrait donc en principe être lié à plusieurs résultats
-* Les résultats sont pour le moment importer via excel, mais il est possible d'importer des résultats via une API. Un tableau excel permettant de gérer facilement l'API est en prévision de réalisation
+* Les résultats sont pour le moment importés via excel, mais il est possible d'importer des résultats via une API. Un tableau excel permettant de gérer facilement l'API est en prévision de réalisation
+
+## Définition d'un suivi
+* Le suivi est un élément qui permet de connaitre où se trouve un échantillon lorsqu'il est prété à un laboratoire.
+* Le suivi permet de générer des MTA - Material Transfert Agrement pour faciliter le suivi de ces éléments 
+
+## Définition d'une notification
+* Les notifications sont des messages affichés :
+- soit dans la zone de notification de l'application
+- soit directement sur l'écran de l'utilisateur dans le cas des notifications 'push'
+
+## Définition d'une information
+* Une information est un écran dans lequel on renvoie l'utilisateur vers une page du site internet pour lui apporter une informatuion supplémentaire
+* Les informations sont visibles depuis l'onglet "s'informer" de l'application
+
+## Définition d'un écran
+* Un écran est un contenu qui sera affiché au lancement de l'application, notamment lors du premier lancement
+* Il permet de présenter le fonctionnement de l'application à l'utilisateur
