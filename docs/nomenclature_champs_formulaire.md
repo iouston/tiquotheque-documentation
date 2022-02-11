@@ -179,6 +179,7 @@ Par défaut, +365 jours par rapport à la date de saisie. Voir le champ tms
 - Type de champ : Liste déroulante
 - Code du champ : precis_zone_geo
 - Valeurs utilisées :
+* -1,vide / champ non obligatoire
 * 0,Je ne connais pas le lieu de la piqûre
 * 1,Je connais le lieu de la piqûre
 
