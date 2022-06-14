@@ -438,3 +438,24 @@ Un numéro BEA correspond à un lot d'échantillon (tous ceux d'une enveloppe en
 3,14a16,Entre 14 et 16h
 4,16a18,Entre 16h et 18h
 
+# Champs relatifs au formulaire spécifique OFB
+
+> [!WARNING]
+> Tous les champs relatifs à l'OFB doivent être préfixés avec "ofb"
+
+
+## Catégorie professionnelle
+- Type de champ : Select, permet de préciser la catégorie professionnelle
+- Code du champ : ofb_cat_pro
+- Valeurs utilisées :
+* 1,ofb_perso_admin,Personnel administratif
+* 2,ofb_perso_terrain,Personnel de terrain
+
+## Heure Piqure
+- Type de champ : Select, permet de préciser la catégorie professionnelle
+- Code du champ : ofb_heure_piqure
+- Valeurs utilisées :
+* 1,hpiq_m,Matin
+* 2,hpiq_apm,Après-midi
+* 3,hpiq_s,Soir
+* 4,hpiq_jnspa,Je ne sais pas
