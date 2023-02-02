@@ -202,7 +202,7 @@ Par défaut, +365 jours par rapport à la date de saisie. Voir le champ tms
 ## Photos
 - Type de champ : varchar, nom du fichier séparé par une virgule.
 Le fichier est renomé avec la référence du signalement comme par exemple : 026586_Photo_1.png,026586_Photo_2.png,026586_Photo_3.png
-- Code du champ : lieu_piqure_pays
+- Code du champ : photos
 
 ## Lieu piqure ville
 - Type de champ : varchar, le nom de la ville en toute lettre
