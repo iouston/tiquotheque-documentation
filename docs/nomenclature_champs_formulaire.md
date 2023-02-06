@@ -18,7 +18,7 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 - Code de champ : ref
 
 ## 
--Type de champ :
+- Type de champ :
 - Code de champ : track_id
 
 ## Signalement humain ou animal
@@ -29,7 +29,7 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 * 0 = animal
 
 ## Type de formulaire
--Type de champ :
+- Type de champ :
 - Code de champ : fk_form
 - Valeurs utilisées :
 * -1 =
@@ -41,46 +41,46 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 * 11 =
 
 ## Date de création
--Type de champ : date + heure, date de création du signalement
+- Type de champ : date + heure, date de création du signalement
 - Code de champ : datec
 
 ## Identifiant de l'auteur du signalement
--Type de champ : integer, numéro d'identification de l'auteur du signalement
+- Type de champ : integer, numéro d'identification de l'auteur du signalement
 - Code de champ : user_author_id
 
-## 
--Type de champ :
+## ?
+- Type de champ :
 - Code de champ :fk_profile
 
-## 
--Type de champ : booléen
+## ?
+- Type de champ : booléen
 - Code de champ : envoi_ar
 - Valeurs utilisées :
 * 0 =
 * 1 =
 
-## 
--Type de champ : booléen
+## ?
+- Type de champ : booléen
 - Code de champ : entity
 - Valeurs utilisées :
 * 0 =
 * 1 =
 
-## 
--Type de champ : booléen
+## ?
+- Type de champ : booléen
 - Code de champ : active
 - Valeurs utilisées :
 * 0 =
 * 1 =
 
-## 
--Type de champ : booléen
+## ?
+- Type de champ : booléen
 - Code de champ : is_draft
 - Valeurs utilisées :
 * 0 =
 * 1 =
 
-## Problématique 
+## Problématique ?
 - Type de champ : liste déroulante
 - Code de champ : fk_issue
 - Valeurs utilisées :
