@@ -13,12 +13,12 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 - Type de champ : integer, numéro interne de la base de données. Permet de faire le lien avec 'fk_signalement' de la table 'llx_formulaireval'
 - Code du champ : rowid
 
-## Référence
-- Type de champ : 
+## Référence tiquothèque
+- Type de champ : character, numéro de référence du signalement dans la tiquothèque (signalement ephythia : ref etia00001 à etia18280)
 - Code de champ : ref
 
-## 
-- Type de champ :
+## ?
+- Type de champ : (pas de track_id pour les signalements ephythia)
 - Code de champ : track_id
 
 ## Signalement humain ou animal
@@ -32,13 +32,15 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 - Type de champ :
 - Code de champ : fk_form
 - Valeurs utilisées :
-* -1 =
-* 0 =
-* 1 =
-* 4 =
-* 7 =
-* 10 =
-* 11 =
+* -1 = beug (humain avec formulaire animal) ?
+* 0 = animal ? type de formulaire qui n'existe plus
+* 1 = Humain général
+* 4 = Animaux général
+* 7 = Humains ONF
+* 8 = Hyalom 
+* 9 = Humains CNPF
+* 10 = Humains IGN
+* 11 = Humains OFB
 
 ## Date de création
 - Type de champ : date + heure, date de création du signalement
@@ -47,6 +49,14 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 ## Identifiant de l'auteur du signalement
 - Type de champ : integer, numéro d'identification de l'auteur du signalement
 - Code de champ : user_author_id
+- Valeurs des membres de l'équipe :
+* 26645 = Sandrine Warion
+* 24597 = Paul Fourrey
+* 24390
+* 27105
+* ... = Jonas Durand
+* ... = Julien Marchand
+* ... = ...
 
 ## ?
 - Type de champ :
