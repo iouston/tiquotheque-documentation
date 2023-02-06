@@ -1,7 +1,7 @@
  # Crédits
 
  * La tiquothèque est une action [du programme CiTIQUE](https://www.citique.fr).
- * Il est développé est maintenu par [le CPIE Nancy Champenoux](https://www.cpie54.com) et [Mickael Carlavan](https://www.http://mika-carl.fr)
+ * Il est développé et maintenu par [le CPIE Nancy Champenoux](https://www.cpie54.com) et [Mickael Carlavan](https://www.http://mika-carl.fr)
  * Il est réalisé sur la base du logiciel libre [dolibarr](https://www.dolibarr.org)
  * La tiquothèque est accessible à l'adresse www.tiquotheque.fr
 
