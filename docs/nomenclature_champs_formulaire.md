@@ -9,6 +9,92 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 
 # Pour la table llx_signalement
 
+## Identifiant
+- Type de champ : integer, numéro interne de la base de données. Permet de faire le lien avec 'fk_signalement' de la table 'llx_formulaireval'
+- Code du champ : rowid
+
+## Référence
+- Type de champ : 
+- Code de champ : ref
+
+## 
+-Type de champ :
+- Code de champ : track_id
+
+## Signalement humain ou animal
+- Type de champ : booléen
+- Code de champ : for_human
+- Valeurs utilisées :
+* 1 = humain
+* 0 = animal
+
+## Type de formulaire
+-Type de champ :
+- Code de champ : fk_form
+- Valeurs utilisées :
+* -1 =
+* 0 =
+* 1 =
+* 4 =
+* 7 =
+* 10 =
+* 11 =
+
+## Date de création
+-Type de champ : date + heure, date de création du signalement
+- Code de champ : datec
+
+## Identifiant de l'auteur du signalement
+-Type de champ : integer, numéro d'identification de l'auteur du signalement
+- Code de champ : user_author_id
+
+## 
+-Type de champ :
+- Code de champ :fk_profile
+
+## 
+-Type de champ : booléen
+- Code de champ : envoi_ar
+- Valeurs utilisées :
+* 0 =
+* 1 =
+
+## 
+-Type de champ : booléen
+- Code de champ : entity
+- Valeurs utilisées :
+* 0 =
+* 1 =
+
+## 
+-Type de champ : booléen
+- Code de champ : active
+- Valeurs utilisées :
+* 0 =
+* 1 =
+
+## 
+-Type de champ : booléen
+- Code de champ : is_draft
+- Valeurs utilisées :
+* 0 =
+* 1 =
+
+## Problématique 
+- Type de champ : liste déroulante
+- Code de champ : fk_issue
+- Valeurs utilisées :
+* 0 =
+* 1 =
+* 2 =
+* 3 =
+* 4 =
+* 5 =
+* 6 =
+* 7 =
+* 8 =
+* 9 =
+
 
 # Pour la table llx_formulaireval
 ## rowid
@@ -16,7 +102,7 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 - Code du champ : rowid
 
 ## fk_signalement / Signalement
-- Type de champ : numero interne de la base de données. Permet de faire le lien avec la table 'llx_signalement'. 
+- Type de champ : numero interne de la base de données. Permet de faire le lien avec 'rowid' de la table 'llx_signalement'. 
 Ce numéro correspond au numéro de signalement lié au détail du signalement
 - Code du champ : fk_signalement
 
