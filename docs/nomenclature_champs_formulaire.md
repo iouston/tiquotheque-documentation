@@ -1,7 +1,7 @@
  # Nomenclature des champs de formulaire
 
 ## Comment ça fonctionne ?
-Cette nomenclature vous donne les éléments techniques utilisés par le logiciel de la tiquothèque et les équivalences entre les tables
+Cette nomenclature vous donne les éléments techniques utilisés par le logiciel de la tiquothèque et les équivalences entre les tables.
 
 Les données de signalement sont organisées dans deux tables de base de données :
 - llx_signalement qui stocke les informations générales sur le signalement
@@ -29,7 +29,7 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 * 0 = animal
 
 ## Type de formulaire
-- Type de champ :
+- Type de champ : liste déroulante (int dans la bdd, à factoriser), numéro indiquant le type de formulaire utilisé (7 formulaires actifs au 07/02/2023), issu d'un dictionnaire -> llx_formulaire ('rowid' de llx_formulaire donne les modalités utilisées)
 - Code de champ : fk_form
 - Valeurs utilisées :
 * -1 = beug (humain avec formulaire animal) ?
@@ -47,7 +47,7 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 - Code de champ : datec
 
 ## Identifiant de l'auteur du signalement
-- Type de champ : integer, numéro d'identification de l'auteur du signalement
+- Type de champ : integer, numéro d'identification de l'auteur du signalement, issus d'un dictionnaire -> llx_user ('rowid' de llx_user donne le 'user_author_id' correspondant)
 - Code de champ : user_author_id
 - Valeurs des membres de l'équipe :
 * 26645 = Sandrine Warion
@@ -58,16 +58,16 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 * ... = Julien Marchand
 * ... = ...
 
-## ?
-- Type de champ :
+## Numéro du profil 
+- Type de champ : int, numéro de profil anonymisé associé au signalement (à relier avec 'nom_pique' de llx_formulairefval, /!\ le même nom peu apparaître pour des numéro de profil différents) 
 - Code de champ :fk_profile
 
-## ?
+## Envoi accusé de réception
 - Type de champ : booléen
 - Code de champ : envoi_ar
 - Valeurs utilisées :
-* 0 =
-* 1 =
+* 0 = pas d'accusé de réception envoyé
+* 1 = accusé de réception envoyé
 
 ## ?
 - Type de champ : booléen
@@ -91,20 +91,19 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 * 1 =
 
 ## Problématique ?
-- Type de champ : liste déroulante
+- Type de champ : liste déroulante (int dans la bdd à factoriser), précise la problématique, issu d'un dictionnaire -> llx_c_issue ('rowid' de llx_c_issue donne la modalité associée)
 - Code de champ : fk_issue
 - Valeurs utilisées :
-* 0 =
-* 1 =
-* 2 =
-* 3 =
-* 4 =
-* 5 =
-* 6 =
-* 7 =
-* 8 =
-* 9 =
-
+* 0 = NA
+* 1 = "Tique libre"
+* 2 = "Pas une tique"
+* 3 = "Pas de distinction avec d'autres tiques"
+* 4 = "Doublon au pointage"
+* 5 = "Doublon au dépouillage"
+* 6 = "Doublon base de données"
+* 7 = "Tique absente de l'envoi"
+* 8 = "Ce signalement est un test"
+* 9 = "Doute sur tique libre"
 
 # Pour la table llx_formulaireval
 ## rowid
