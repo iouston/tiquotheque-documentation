@@ -379,7 +379,7 @@ Un numéro BEA correspond à un lot d'échantillon (tous ceux d'une enveloppe en
 
 ## Type formulaire papier
 - Type de champ : Select, permet de préciser le type de formulaire papier
-- Code du champ : primeur_data
+- Code du champ : typeformulairepapier
 - Valeurs utilisées :
 * 0,papierlibre,Papier libre
 * 1,formulairekit,Formulaire avec Kit
