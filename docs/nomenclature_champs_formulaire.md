@@ -43,6 +43,7 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 * 11 = Humains OFB
 
 ## Date de création
+/!\ BEUG ?
 - Type de champ : date + heure, date de création du signalement
 - Code de champ : datec
 
@@ -105,6 +106,11 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 * 8 = "Ce signalement est un test"
 * 9 = "Doute sur tique libre"
 
+## Date serveur / tms
+/!\ pas même tms que pour llx_formulaireval (ni llx_formulairefval)
+- Type de champ : date, heure serveur /!\correspond à la date et l'heure de la dernière modification du signalement!
+- Code du champ : tms
+
 # Pour la table llx_formulaireval
 ## rowid
 - Type de champ : numero interne de la base de données. Sert d'identifiant pour la donnée
@@ -116,7 +122,7 @@ Ce numéro correspond au numéro de signalement lié au détail du signalement
 - Code du champ : fk_signalement
 
 ## Date serveur / tms
-- Type de champ : date, heure serveur
+- Type de champ : date, heure serveur /!\correspond à la date et l'heure de la dernière modification du signalement!
 - Code du champ : tms
 
 ## Date de naissance
