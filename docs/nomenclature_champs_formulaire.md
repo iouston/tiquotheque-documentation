@@ -129,6 +129,21 @@ Ce numéro correspond au numéro de signalement lié au détail du signalement
 - Type de champ : date
 - Code du champ : date_naissance
 
+## Age (ephythia)
+- Type de champ : liste déroulante ?
+- Code du champ : ephythia_age_personne_concernee
+- Valeurs utilisées :
+* 1 = "De 0 à 5 ans"
+* 2 = "De 6 à 10 ans"
+* 3 = "De 11 à 20 ans"
+* 4 = "De 21 à 30 ans"
+* 5 = "De 31 à 40 ans"
+* 6 = "De 41 à 50 ans"
+* 7 = "De 51 à 60 ans"
+* 8 = "De 61 à 70 ans"
+* 9 = "Plus de 70ans"
+
+
 ## ID ephythia
 - Type de champ : integer
 - Code du champ : Numéro propre à ephythia (la première version de l'application stockait les données dans l'applicatif ephythia).
