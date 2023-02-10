@@ -399,12 +399,67 @@ Un numéro BEA correspond à un lot d'échantillon (tous ceux d'une enveloppe en
 - Code du champ : num_bea
 
 ## Type formulaire papier
-- Type de champ : Select, permet de préciser le type de formulaire papier
+- Type de champ : Select, permet de préciser le type de formulaire papier, issu d'un dictionnaire ???
 - Code du champ : typeformulairepapier
 - Valeurs utilisées :
 * 0,papierlibre,Papier libre
 * 1,formulairekit,Formulaire avec Kit
 * 2,formulairesanskit,Formulaire sans Kit
+* ,Formulaire indéterminé
+* ,Signalement app/web + kit
+
+## Partenariat
+- Type de champ : liste déroulante
+- Code de champ : partenariat
+- Valeurs utilisées :
+* ONF
+* Scouts et Guides de France
+
+## Sociologie détail (notes)
+-Type de champ : champ libre
+- Code de champ : sociologie_detail
+
+## Sociologie type
+- Type de champ : liste déroulante (spécifique à la tiquothèque, rempli par un membre de CiTIQUE)
+- Code de champ : sociologie_type
+- Valeurs utilisées :
+* Présence d'un courrier d'accompagnement
+* Excuses pour l'emballage
+* Demande d'analyse et de résultat
+* Demande information sur tique
+* Application qui ne marche pas
+* Remerciements
+* Pas content
+
+## Age personne piquée (ephythia)
+- Type de champ : liste déroulante
+- Code de champ : ephythia_age_personne_concernee
+- Valeurs utilisées :
+* ----
+* De 1 à 5 ans
+* De 6 à 10 ans
+* De 11 à 20 ans
+* De 21 à 30 ans
+* De 31 à 40 ans
+* De 41 à 50 ans
+* De 51 à 60 ans
+* Plus de 70 ans
+
+## Statut
+- Type de champ : 
+- Code de champ :
+- Valeurs utilisées :
+* indéfini
+* valide
+* annule
+
+## Détails statut 
+/!\ Différent de fk_issue dans llx_signalement
+- Type de champ : cases à coher avec plusieurs choix possibles (doit devenir liste déroulante)
+- Code de champ : detail_statut
+- Valeurs utilisées :
+* Tique libre
+* N'est pas une tique
 
 # Champs relatifs au formulaire spécifique CNFP
 
