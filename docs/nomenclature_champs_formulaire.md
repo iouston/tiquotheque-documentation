@@ -32,7 +32,7 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 - Type de champ : liste déroulante (int dans la bdd, à factoriser), numéro indiquant le type de formulaire utilisé (7 formulaires actifs au 07/02/2023), issu d'un dictionnaire -> llx_formulaire ('rowid' de llx_formulaire donne les modalités utilisées)
 - Code de champ : fk_form
 - Valeurs utilisées :
-* -1 = beug (humain avec formulaire animal) ?
+* -1 = bug (humain avec formulaire animal) ?
 * 0 = animal ? type de formulaire qui n'existe plus
 * 1 = Humain général
 * 4 = Animaux général
@@ -43,7 +43,7 @@ Les données de signalement sont organisées dans deux tables de base de donnée
 * 11 = Humains OFB
 
 ## Date de création
-/!\ BEUG ?
+/!\ BUG ?
 - Type de champ : date + heure, date de création du signalement
 - Code de champ : datec
 
@@ -446,8 +446,8 @@ Un numéro BEA correspond à un lot d'échantillon (tous ceux d'une enveloppe en
 * Plus de 70 ans
 
 ## Statut
-- Type de champ : 
-- Code de champ :
+- Type de champ : liste déroulante
+- Code de champ : statut
 - Valeurs utilisées :
 * indéfini
 * valide
