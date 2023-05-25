@@ -9,4 +9,4 @@
 
 
 [Accéder à la tiquothèque](https://tiquotheque.fr)
-[Lire la documentation](#CiTIQUE-Documentation)
+[Lire la documentation](#tiquotheque-documentation)
