@@ -630,3 +630,44 @@ Un numéro BEA correspond à un lot d'échantillon (tous ceux d'une enveloppe en
 * 2,hpiq_apm,Après-midi
 * 3,hpiq_s,Soir
 * 4,hpiq_jnspa,Je ne sais pas
+
+## ONF Catégorie Professionnelle
+- Type de champ : Select, permet de préciser la catégorie professionnelle
+- Code du champ : ofb_heure_piqure
+1,tech,Technicien forestier
+2,ouvrier,Ouvrier forestier
+3,sylviculteur,Sylviculteur
+4,bucheron,Bucheron
+5,conduc_engin,Conducteur d’engins
+6,conduc_travaux,Conducteur travaux
+7,rup,RUP
+8,rut,RUT
+9,Autre (préciser)
+
+## ONF Structure de rattachement
+- Type de champ : Select, permet de sélectionner la structure de rattachement
+- Code du champ : onf_struc_rattach
+1,dt_sn,DT SN
+2,dt_ge,DT GE
+3,dt_aura,DT AURA
+4,dt_mm,DT MM
+5,dt_coa,DT COA
+6,dt_bfc,DT BFC
+7,corse,Corse
+8,reunion,Réunion
+9,mayotte,Mayotte
+10,martinique,Martinique
+11,guadeloupe,Guadeloupe
+12,guyane,Guyane
+
+## ONF Raison de la presence
+- Type de champ : Select, permet de préciser la raison de la présence
+- Code du champ : onf_raison_presence
+1,travaux_sylv,Travaux sylvicoles
+2,travaux_exploit_forest,Travaux d’exploitation forestière
+3,amenage_trvx_tourist,Aménagements et travaux touristiques
+4,inv_forest_design,Inventaire forestier et désignation
+5,surveillance_controle_chantier,Surveillance et contrôle des chantiers
+6,chasse,Chasse
+7,jnsp,Je ne sais pas
+8,autre,Autre
