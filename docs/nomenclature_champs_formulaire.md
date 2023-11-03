@@ -647,6 +647,7 @@ Un numéro BEA correspond à un lot d'échantillon (tous ceux d'une enveloppe en
 ## ONF Structure de rattachement
 - Type de champ : Select, permet de sélectionner la structure de rattachement
 - Code du champ : onf_struc_rattach
+13,dg,DG
 1,dt_sn,DT SN
 2,dt_ge,DT GE
 3,dt_aura,DT AURA
